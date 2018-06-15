@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tools:RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/bg"
+                      tools:context="kr.co.iosystem.blackeyeonandroid.SplashScreenActivity"
+                      android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/loading"
+        android:baselineAlignBottom="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="500dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rotate"
+        android:src="@drawable/rb_150"
+        android:repeatCount="infinite"
+        android:repeatMode="restart"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rotate"
+        android:id="@+id/linearLayout3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:background="@drawable/waiting"
+        android:baselineAlignBottom="false"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50dp"
+        android:textColor="#ff0000"/>
+
+</tools:RelativeLayout>
