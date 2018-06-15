@@ -36,7 +36,6 @@ public class SplashScreenActivity extends FullScreenActivity {
         text.setText(text.getText() + String.valueOf(startTime / 1000));
         mGoldStar.startAnimation(rotation);
         countDownTimer.start();
-
     }
 
     public class MyCountDownTimer extends CountDownTimer {

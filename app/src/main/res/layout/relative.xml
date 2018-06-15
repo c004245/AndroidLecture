@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!-- 따로 위치를 지정하지않으면 왼쪽 맨상단 0,0 에 배치 -->
+    <!-- 부모의 왼쪽, 맨위 -->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv1"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:text="근로자1"/>
+
+
+    <!-- tv1 밑에 -->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv1"
+              android:text="근로자2"/>
+
+    <!-- 오른쪽-->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="근로자3"/>
+</RelativeLayout>
